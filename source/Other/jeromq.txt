@@ -1,0 +1,26 @@
+javaaddpath('D:\Workspace\EliteQuant_Matlab\source\other\jnacl-0.1.0.jar')
+javaaddpath('D:\Workspace\EliteQuant_Matlab\source\other\jeromq-0.4.2.jar')
+addpath('D:\Workspace\EliteQuant_Matlab\source\EliteQuant')
+
+########## demo #####################
+
+import org.zeromq.ZMQ;
+ctx = zmq.Ctx();
+socket = ctx.createSocket(ZMQ.PAIR);
+socket.connect('tcp://127.0.0.1:33333');    socket.bind('tcp://127.0.0.1:33333');
+
+message = zmq.Msg(uint8('hello world'));
+socket.send(message, 1)
+
+message = socket.recv(1);
+msg = message.data;
+msg(msg==32) = 95;         % replace space with underscore
+msg = join(cellstr(native2unicode(msg)),'')
+v = strsplit(msg{1}, '|')
+sym = strrep(v{1},'_',' ')
+strcmp(v{1},'Hello')
+str2num(v{2})
+
+socket.termEndpoint('tcp://127.0.0.1:33333');
+socket.close();
+ctx.terminate();
