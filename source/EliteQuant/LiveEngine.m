@@ -60,13 +60,17 @@ handles.output = hObject;
 %javaaddpath('D:\Workspace\EliteQuant_Matlab\source\jeromq-0.4.2.jar');
 import org.zeromq.ZMQ;
 
-handles.ctx = zmq.Ctx();
-handles.socket = handles.ctx.createSocket(ZMQ.PAIR);
-handles.socket.connect('tcp://127.0.0.1:17777'); 
+handles.ctx = ZMQ.context(1);
+handles.socket = handles.ctx.socket(ZMQ.SUB);
+handles.socket.connect('tcp://127.0.0.1:55559'); 
+handles.socket.subscribe('');
 
-handles.symbols = {'AMZN STK SMART', 'AAPL STK SMART', 'GS STK SMART', 'JPM STK SMART', 'SPY STK SMART',...
-    'TSLA STK SMART', 'FB STK SMART','BIDU STK SMART','BABA STK SMART',...
-    'ESZ7 FUT GLOBEX 50','EUR.USD CASH IDEALPRO', 'GBP.USD CASH IDEALPRO'};
+handles.ctx2 = zmq.Ctx();
+handles.socket2 = handles.ctx2.createSocket(ZMQ.PAIR);
+handles.socket2.connect('tcp://127.0.0.1:55558'); 
+
+config_yaml = yaml.ReadYaml('config.yaml');
+handles.symbols = config_yaml.tickers;
 handles.colNames = {'Bid Size', 'Bid', 'Ask Size', 'Ask', 'Last', 'Last Size'};
 handles.msginTimer = timer('ExecutionMode','FixedRate',...
                 'Period',0.1,...
@@ -172,36 +176,39 @@ size = get(handles.tbSize,'String');
 ostr = ['o|MKT|' symbol '|' size];
 disp(ostr);
 msg = zmq.Msg(uint8(ostr));
-handles.socket.send(msg,1);
+handles.socket2.send(msg,1);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Timer Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function updateUI(handles)
 message = handles.socket.recv(1);
 if ~isempty(message)
-    msg = message.data;
+    msg = message;
     msg(msg==32) = 95;         % replace space with underscore
     msg = join(cellstr(native2unicode(msg)),'');
     v = strsplit(msg{1}, '|');
     
-    if (length(v{1}) > 1)         % ticker
-        if ((v{3} == '0') || (v{3} == '2') || (v{3} == '4'))  %  bid/ask/last price
-            sym = strrep(v{1},'_',' ');
-            idx = find(strcmp(handles.symbols, sym) == 1);
-            if (~isempty(idx))
-                handles.tblMarketData.Data{idx,5} = v{4};
-            end
+    if ((v{3} == '0') || (v{3} == '2') || (v{3} == '4'))  %  bid/ask/last price
+        sym = strrep(v{1},'_',' ');
+        idx = find(strcmp(handles.symbols, sym) == 1);
+        if (~isempty(idx))
+            handles.tblMarketData.Data{idx,5} = v{4};
         end
-    else
-        tmpstr = get(handles.lbMessage, 'string');
-        if (isempty(tmpstr))
-            tmpstr = msg;
-        else
-            tmpstr(end+1,1) = msg;
-        end
-        set(handles.lbMessage, 'string', tmpstr);
     end
+end
+
+message = handles.socket2.recv(1);
+if ~isempty(message)
+    msg = message.data;
+    msg(msg==32) = 95;         % replace space with underscore
+    msg = join(cellstr(native2unicode(msg)),'');
     
-    
+    tmpstr = get(handles.lbMessage, 'string');
+    if (isempty(tmpstr))
+        tmpstr = msg;
+    else
+        tmpstr(end+1,1) = msg;
+    end
+    set(handles.lbMessage, 'string', tmpstr);
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End of Timer Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -215,9 +222,12 @@ function mainWindow_CloseRequestFcn(hObject, eventdata, handles)
 
 % Hint: delete(hObject) closes the figure
 
-handles.socket.termEndpoint('tcp://127.0.0.1:17777');
-handles.socket.close();
-handles.ctx.terminate();
+
+%handles.socket.close();
+%handles.ctx.close();
+handles.socket2.termEndpoint('tcp://127.0.0.1:55558');
+handles.socket2.close();
+handles.ctx2.terminate();
 
 % timerfind
 stop(handles.msginTimer);

@@ -1,5 +1,5 @@
 javaaddpath('D:\Workspace\EliteQuant_Matlab\source\other\jnacl-0.1.0.jar')
-javaaddpath('D:\Workspace\EliteQuant_Matlab\source\other\jeromq-0.4.2.jar')
+javaaddpath('D:\Workspace\EliteQuant_Matlab\source\other\jeromq-0.4.3.jar')
 addpath('D:\Workspace\EliteQuant_Matlab\source\EliteQuant')
 
 ########## demo #####################

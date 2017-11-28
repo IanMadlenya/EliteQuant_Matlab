@@ -4,6 +4,7 @@ classdef BacktestEngine < handle
       initialCash
       symbols
       benchmark
+      histDataDir
       startDate
       endDate
       strategyName
@@ -20,14 +21,22 @@ classdef BacktestEngine < handle
    end
    methods (Access = public)
       function self = BacktestEngine(strategy)
-          self.initialCash = 500000;
-          self.symbols = {'AMZN', 'AAPL'};
-          self.startDate = datenum('2010-01-01', 'yyyy-mm-dd');
-          self.endDate = datenum('2017-05-01', 'yyyy-mm-dd');
-          self.outputDir = 'd://workspace//EliteQuant_Matlab//out';
+          config_yaml = yaml.ReadYaml('config_backtest.yaml');
+          self.initialCash = config_yaml.cash;
+          self.symbols = config_yaml.tickers;
+          self.startDate = datenum(config_yaml.start_date,'yyyy-mmm-dd');
+          self.endDate = datenum(config_yaml.end_date,'yyyy-mmm-dd');
+          self.outputDir = config_yaml.output_dir;
+          self.histDataDir = config_yaml.hist_dir;
+          datasource = config_yaml.datasource;
           
           % 1. datafeed
-          self.dataFeed = BacktestDataFeed(self.startDate, self.endDate);
+          if strcmpi(datasource, 'LOCAL')
+              self.dataFeed = BacktestDataFeedLocal(self.histDataDir, self.startDate, self.endDate);
+          else
+              self.dataFeed = BacktestDataFeedQuandl(self.startDate, self.endDate);
+          end
+          
           self.dataFeed.subscribemarketdata(self.symbols);
           
           % 2. event engine
