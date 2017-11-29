@@ -22,7 +22,7 @@ function varargout = LiveEngine(varargin)
 
 % Edit the above text to modify the response to help LiveEngine
 
-% Last Modified by GUIDE v2.5 19-Oct-2017 23:25:04
+% Last Modified by GUIDE v2.5 28-Nov-2017 23:22:29
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -172,8 +172,18 @@ function btnSubmitOrder_Callback(hObject, eventdata, handles)
 
 %q = str2num(char(get(handles.editq,'String')));
 symbol = get(handles.tbSymbol,'String');
+otype = get(handles.popupmenuordertype,'Value');
+oflag = get(handles.popupmenuorderflag,'Value');
+
 size = get(handles.tbSize,'String');
-ostr = ['o|MKT|' symbol '|' size];
+
+if (otype == 1)
+    ostr = ['o|MKT|' symbol '|' size '|' int2str(oflag-1)];
+else
+    price = get(handles.tbPrice,'String');
+    ostr = ['o|LMT|' symbol '|' size '|' price '|' int2str(oflag-1)];
+end
+
 disp(ostr);
 msg = zmq.Msg(uint8(ostr));
 handles.socket2.send(msg,1);
@@ -234,3 +244,109 @@ stop(handles.msginTimer);
 delete(handles.msginTimer);
 
 delete(hObject);
+
+
+% --- Executes on selection change in popupmenuordertype.
+function popupmenuordertype_Callback(hObject, eventdata, handles)
+% hObject    handle to popupmenuordertype (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns popupmenuordertype contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from popupmenuordertype
+
+
+% --- Executes during object creation, after setting all properties.
+function popupmenuordertype_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to popupmenuordertype (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on selection change in popupmenuorderflag.
+function popupmenuorderflag_Callback(hObject, eventdata, handles)
+% hObject    handle to popupmenuorderflag (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns popupmenuorderflag contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from popupmenuorderflag
+
+
+% --- Executes during object creation, after setting all properties.
+function popupmenuorderflag_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to popupmenuorderflag (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function tbPrice_Callback(hObject, eventdata, handles)
+% hObject    handle to tbPrice (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of tbPrice as text
+%        str2double(get(hObject,'String')) returns contents of tbPrice as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function tbPrice_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to tbPrice (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function tbOrderID_Callback(hObject, eventdata, handles)
+% hObject    handle to tbOrderID (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of tbOrderID as text
+%        str2double(get(hObject,'String')) returns contents of tbOrderID as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function tbOrderID_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to tbOrderID (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in btnCancelOrder.
+function btnCancelOrder_Callback(hObject, eventdata, handles)
+% hObject    handle to btnCancelOrder (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+oid = get(handles.tbOrderID,'String');
+ostr = ['c|' oid];
+
+disp(ostr);
+msg = zmq.Msg(uint8(ostr));
+handles.socket2.send(msg,1);
