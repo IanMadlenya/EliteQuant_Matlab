@@ -89,7 +89,7 @@ engine.run();
 4. create folder for log_dir and data_dir respectively. The former records runtime logs, while the later saves tick data.
 5. run eqserver.exe
 
-After that, in Matalb **navigate to EliteQuant_Matlab**, then execute the following in Matalb
+After that, in Matlab **navigate to EliteQuant_Matlab folder**, then execute the following in Matlab
 
 ```matlab
 LiveEngine
