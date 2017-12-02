@@ -89,11 +89,13 @@ engine.run();
 4. create folder for log_dir and data_dir respectively. The former records runtime logs, while the later saves tick data.
 5. run eqserver.exe
 
-After that, execute the following in Matalb
+After that, in Matalb **navigate to EliteQuant_Matlab**, then execute the following in Matalb
 
 ```matlab
 LiveEngine
 ```
+
+![Live Demo](/resource/ib_demo.gif?raw=true "Live Demo")
 
 **Interactive Brokers**
 is the most popular broker among retail traders. A lot of retail trading platform such as quantopian, quantconnect are built to support IB. If you don't have IB account but want to try it out, they provide demo account edemo with password demouser. Just download TWS trader workstation and log in with this demo account. Note that accound id changes everytime you log on to TWS with demo account so you have to change EliteQuant config file accordingly.

@@ -22,7 +22,7 @@ function varargout = LiveEngine(varargin)
 
 % Edit the above text to modify the response to help LiveEngine
 
-% Last Modified by GUIDE v2.5 28-Nov-2017 23:22:29
+% Last Modified by GUIDE v2.5 02-Dec-2017 15:55:47
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -55,6 +55,14 @@ function LiveEngine_OpeningFcn(hObject, eventdata, handles, varargin)
 % Choose default command line output for LiveEngine
 handles.output = hObject;
 
+% Tab group
+handles.tabManager = TabManager(hObject);
+% Set-up a selection changed function on the create tab groups
+tabGroups = handles.tabManager.TabGroups;
+% for tgi=1:length(tabGroups)
+%     set(tabGroups(tgi),'SelectionChangedFcn',@tabChangedCB)
+% end
+
 % Update handles structure
 %javaaddpath('D:\Workspace\EliteQuant_Matlab\source\jnacl-0.1.0.jar');
 %javaaddpath('D:\Workspace\EliteQuant_Matlab\source\jeromq-0.4.2.jar');
@@ -69,20 +77,22 @@ handles.ctx2 = zmq.Ctx();
 handles.socket2 = handles.ctx2.createSocket(ZMQ.PAIR);
 handles.socket2.connect('tcp://127.0.0.1:55558'); 
 
-config_yaml = yaml.ReadYaml('config.yaml');
+config_yaml = yaml.ReadYaml('server/config.yaml');
 handles.symbols = config_yaml.tickers;
-handles.colNames = {'Bid Size', 'Bid', 'Ask Size', 'Ask', 'Last', 'Last Size'};
 handles.msginTimer = timer('ExecutionMode','FixedRate',...
                 'Period',0.1,...
                 'TimerFcn',@(~,~) updateUI(handles));
 
-guidata(hObject, handles);
-
 % UIWAIT makes LiveEngine wait for user response (see UIRESUME)
 % uiwait(handles.mainWindow);
-set(handles.tblMarketData, 'ColumnName', handles.colNames);
+set(handles.tblMarketData, 'ColumnName', {'Bid Size', 'Bid', 'Ask', 'Ask Size', 'Last', 'Last Size'});
 set(handles.tblMarketData, 'RowName', handles.symbols);
+set(handles.tblOrder, 'ColumnName', {'OrderID', 'Symbol', 'OrderTime', 'Status'});
+handles.tblOrder.Data = {};
+set(handles.tblFill, 'ColumnName', {'FillID', 'Symbol', 'FillTime', 'FillPrice', 'FillSize'});
+handles.tblFill.Data = {};
 
+guidata(hObject, handles);
 start(handles.msginTimer);
 
 % --- Outputs from this function are returned to the command line.
@@ -117,7 +127,12 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
     set(hObject,'BackgroundColor','white');
 end
 
-
+%**********************************************************************%
+%%------------------------ Callback ----------------------------------%%
+%**********************************************************************%
+% Called when a user clicks on a tab
+function tabChangedCB(src, eventdata)
+disp(['Changing tab from ' eventdata.OldValue.Title ' to ' eventdata.NewValue.Title ] );
 
 function tbSymbol_Callback(hObject, eventdata, handles)
 % hObject    handle to tbSymbol (see GCBO)
@@ -139,8 +154,6 @@ function tbSymbol_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
-
-
 
 function tbSize_Callback(hObject, eventdata, handles)
 % hObject    handle to tbSize (see GCBO)
@@ -187,64 +200,6 @@ end
 disp(ostr);
 msg = zmq.Msg(uint8(ostr));
 handles.socket2.send(msg,1);
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Timer Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-function updateUI(handles)
-message = handles.socket.recv(1);
-if ~isempty(message)
-    msg = message;
-    msg(msg==32) = 95;         % replace space with underscore
-    msg = join(cellstr(native2unicode(msg)),'');
-    v = strsplit(msg{1}, '|');
-    
-    if ((v{3} == '0') || (v{3} == '2') || (v{3} == '4'))  %  bid/ask/last price
-        sym = strrep(v{1},'_',' ');
-        idx = find(strcmp(handles.symbols, sym) == 1);
-        if (~isempty(idx))
-            handles.tblMarketData.Data{idx,5} = v{4};
-        end
-    end
-end
-
-message = handles.socket2.recv(1);
-if ~isempty(message)
-    msg = message.data;
-    msg(msg==32) = 95;         % replace space with underscore
-    msg = join(cellstr(native2unicode(msg)),'');
-    
-    tmpstr = get(handles.lbMessage, 'string');
-    if (isempty(tmpstr))
-        tmpstr = msg;
-    else
-        tmpstr(end+1,1) = msg;
-    end
-    set(handles.lbMessage, 'string', tmpstr);
-end
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End of Timer Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-% --- Executes when user attempts to close mainWindow.
-function mainWindow_CloseRequestFcn(hObject, eventdata, handles)
-% hObject    handle to mainWindow (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-
-% Hint: delete(hObject) closes the figure
-
-
-%handles.socket.close();
-%handles.ctx.close();
-handles.socket2.termEndpoint('tcp://127.0.0.1:55558');
-handles.socket2.close();
-handles.ctx2.terminate();
-
-% timerfind
-stop(handles.msginTimer);
-delete(handles.msginTimer);
-
-delete(hObject);
-
 
 % --- Executes on selection change in popupmenuordertype.
 function popupmenuordertype_Callback(hObject, eventdata, handles)
@@ -350,3 +305,93 @@ ostr = ['c|' oid];
 disp(ostr);
 msg = zmq.Msg(uint8(ostr));
 handles.socket2.send(msg,1);
+
+
+% --- Executes on button press in pushbutton3.
+function pushbutton3_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in pushbutton4.
+function pushbutton4_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton4 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Timer Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+function updateUI(handles)
+message = handles.socket.recv(1);
+if ~isempty(message)
+    msg = message;
+    msg(msg==32) = 95;         % replace space with underscore
+    msg = join(cellstr(native2unicode(msg)),'');
+    v = strsplit(msg{1}, '|');
+    
+    if ((v{3} == '0') || (v{3} == '2') || (v{3} == '4'))  %  bid/ask/last price
+        sym = strrep(v{1},'_',' ');
+        idx = find(strcmp(handles.symbols, sym) == 1);
+        if (~isempty(idx))
+            handles.tblMarketData.Data{idx,5} = v{4};
+        end
+    end
+end
+
+message = handles.socket2.recv(1);
+if ~isempty(message)
+    msg = message.data;
+    msg(msg==32) = 95;         % replace space with underscore
+    msg = join(cellstr(native2unicode(msg)),'');
+    
+    tmpstr = get(handles.lbMessage, 'string');
+    if (isempty(tmpstr))
+        tmpstr = msg;
+    else
+        tmpstr(end+1,1) = msg;
+    end
+    set(handles.lbMessage, 'string', tmpstr);
+    
+    % order grid: if exist order id, update; otherwise add one
+    v = strsplit(msg{1}, '|');
+    if (v{1} == 's')
+        if isempty(handles.tblOrder.Data)
+            handles.tblOrder.Data = {v{2}, '', '', v{3}};
+        else
+            oidx = find(not(cellfun('isempty', strfind(handles.tblOrder.Data(:,1),v{2}))));
+            if isempty(oidx)  % add
+                handles.tblOrder.Data = [{v{2}, '', '', char(OrderStatus(str2num(v{3})))}; handles.tblOrder.Data];
+            else
+                handles.tblOrder.Data{oidx, 4} = char(OrderStatus(str2num(v{3})));
+            end
+        end
+    elseif (v{1}=='f')
+        handles.tblFill.Data = [{v{2}, '', v{3}, v{4}, v{5}}; handles.tblFill.Data];
+        oidx = find(not(cellfun('isempty', strfind(handles.tblOrder.Data(:,1),v{2}))));
+        handles.tblOrder.Data{oidx, 4} = char(OrderStatus(6));
+    end 
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End of Timer Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --- Executes when user attempts to close mainWindow.
+function mainWindow_CloseRequestFcn(hObject, eventdata, handles)
+% hObject    handle to mainWindow (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: delete(hObject) closes the figure
+
+
+%handles.socket.close();
+%handles.ctx.close();
+handles.socket2.termEndpoint('tcp://127.0.0.1:55558');
+handles.socket2.close();
+handles.ctx2.terminate();
+
+% timerfind
+stop(handles.msginTimer);
+delete(handles.msginTimer);
+
+delete(hObject);
