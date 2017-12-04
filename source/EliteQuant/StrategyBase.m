@@ -34,6 +34,9 @@ classdef StrategyBase < handle
       function onfill(self, fillEvent)
       end
       
+      function reset(self)
+      end
+      
       function placeorder(self, orderEvent)
           self.eventsEngine.push(orderEvent);
       end

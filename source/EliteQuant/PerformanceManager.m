@@ -67,6 +67,7 @@ classdef PerformanceManager < handle
       end
       
       function saveresults(self, outputDir)
+          fts2ascii([outputDir '/equity_line.txt'], self.equitySeries)
       end
    end
 end

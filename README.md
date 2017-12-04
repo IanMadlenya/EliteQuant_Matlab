@@ -24,13 +24,14 @@ Related projects include
 - [C++](https://github.com/EliteQuant/EliteQuant_Cpp)
 - [Python](https://github.com/EliteQuant/EliteQuant_Python)
 - [Matlab](https://github.com/EliteQuant/EliteQuant_Matlab)
-- [R]()
-- [C#]()
+- [R](https://github.com/EliteQuant/EliteQuant_R)
+- [C#](https://github.com/EliteQuant/EliteQuant_CSharp)
 - [Excel](https://github.com/EliteQuant/EliteQuant_Excel)
-- [Java]()
-- [Scala]()
-- [Go]()
-- [Julia]()
+- [Java](https://github.com/EliteQuant/EliteQuant_Java)
+- [Scala](https://github.com/EliteQuant/EliteQuant_Scala)
+- [Kotlin](https://github.com/EliteQuant/EliteQuant_Kotlin)
+- [Go](https://github.com/EliteQuant/EliteQuant_Go)
+- [Julia](https://github.com/EliteQuant/EliteQuant_Julia)
 
 ## Project Summary
 

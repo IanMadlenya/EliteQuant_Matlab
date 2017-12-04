@@ -318,3 +318,11 @@
 2017-12-02 16:04:52.675 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=3,eCode=202,msg:Order Canceled - reason:.
 2017-12-02 16:07:35.900 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: AMZN,0,  0
 2017-12-02 16:10:35.898 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: AMZN,0,  0
+2017-12-02 16:13:35.924 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: AMZN,0,  0
+2017-12-02 16:15:53.739 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: AMZN,0,  0
+2017-12-02 16:16:35.915 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: AMZN,0,  0
+2017-12-02 20:34:08.795 INFO:[Services\Data\dataservice.cpp,93][EliteQuant::DataBoardService]disconnect from market data feed.
+2017-12-02 20:34:08.811 INFO:[Services\Data\dataservice.cpp,49][EliteQuant::MarketDataService]disconnect from market data feed.
+2017-12-02 20:34:08.811 INFO:[Services\Api\apiservice.cpp,37][EliteQuant::ApiServer::~ApiServer] api service stopped.
+2017-12-02 20:34:08.920 INFO:[Brokers\IB\ibbrokerage.cpp,154][EliteQuant::IBBrokerage::disconnectFromBrokerage]TWS connection disconnected!
+2017-12-02 20:34:08.920 INFO:[Services\Brokerage\brokerageservice.cpp,51][EliteQuant::BrokerageService]Brokerage service stopped.
