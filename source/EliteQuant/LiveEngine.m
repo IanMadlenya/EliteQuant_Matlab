@@ -22,7 +22,7 @@ function varargout = LiveEngine(varargin)
 
 % Edit the above text to modify the response to help LiveEngine
 
-% Last Modified by GUIDE v2.5 02-Dec-2017 15:55:47
+% Last Modified by GUIDE v2.5 28-Jan-2018 20:22:55
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -85,12 +85,23 @@ handles.msginTimer = timer('ExecutionMode','FixedRate',...
 
 % UIWAIT makes LiveEngine wait for user response (see UIRESUME)
 % uiwait(handles.mainWindow);
-set(handles.tblMarketData, 'ColumnName', {'Bid Size', 'Bid', 'Ask', 'Ask Size', 'Last', 'Last Size'});
-set(handles.tblMarketData, 'RowName', handles.symbols);
-set(handles.tblOrder, 'ColumnName', {'OrderID', 'Symbol', 'OrderTime', 'Status'});
+
+%set(handles.tblMarketData, 'RowName', handles.symbols);
+%set(handles.tblMarketData, 'data', {});
+mktData = get(handles.tblMarketData,'Data');
+mktData = {};
+for i = 1:length(handles.symbols)
+    mktData(end+1,1:15)={''}; 
+    mktData(end,1) = handles.symbols(i);
+end
+set(handles.tblMarketData, 'data', mktData);
+
+handles.tblLog.Data = {};
 handles.tblOrder.Data = {};
-set(handles.tblFill, 'ColumnName', {'FillID', 'Symbol', 'FillTime', 'FillPrice', 'FillSize'});
 handles.tblFill.Data = {};
+handles.tblPosition.Data = {};
+handles.tblAccount.Data = {};
+handles.tblStrategy.Data = {};
 
 guidata(hObject, handles);
 start(handles.msginTimer);
@@ -177,9 +188,9 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
 end
 
 
-% --- Executes on button press in btnSubmitOrder.
-function btnSubmitOrder_Callback(hObject, eventdata, handles)
-% hObject    handle to btnSubmitOrder (see GCB)O
+% --- Executes on button press in btnPlaceOrder.
+function btnPlaceOrder_Callback(hObject, eventdata, handles)
+% hObject    handle to btnPlaceOrder (see GCB)O
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -383,7 +394,6 @@ function mainWindow_CloseRequestFcn(hObject, eventdata, handles)
 
 % Hint: delete(hObject) closes the figure
 
-
 %handles.socket.close();
 %handles.ctx.close();
 handles.socket2.termEndpoint('tcp://127.0.0.1:55558');
@@ -395,3 +405,146 @@ stop(handles.msginTimer);
 delete(handles.msginTimer);
 
 delete(hObject);
+
+
+
+function tbName_Callback(hObject, eventdata, handles)
+% hObject    handle to tbName (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of tbName as text
+%        str2double(get(hObject,'String')) returns contents of tbName as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function tbName_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to tbName (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on selection change in popupmenusectype.
+function popupmenusectype_Callback(hObject, eventdata, handles)
+% hObject    handle to popupmenusectype (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns popupmenusectype contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from popupmenusectype
+
+
+% --- Executes during object creation, after setting all properties.
+function popupmenusectype_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to popupmenusectype (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on selection change in popupmenudirection.
+function popupmenudirection_Callback(hObject, eventdata, handles)
+% hObject    handle to popupmenudirection (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns popupmenudirection contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from popupmenudirection
+
+
+% --- Executes during object creation, after setting all properties.
+function popupmenudirection_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to popupmenudirection (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on selection change in popupmenuexchange.
+function popupmenuexchange_Callback(hObject, eventdata, handles)
+% hObject    handle to popupmenuexchange (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns popupmenuexchange contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from popupmenuexchange
+
+
+% --- Executes during object creation, after setting all properties.
+function popupmenuexchange_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to popupmenuexchange (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on selection change in popupmenuaccount.
+function popupmenuaccount_Callback(hObject, eventdata, handles)
+% hObject    handle to popupmenuaccount (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns popupmenuaccount contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from popupmenuaccount
+
+
+% --- Executes during object creation, after setting all properties.
+function popupmenuaccount_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to popupmenuaccount (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in btnStartStrategy.
+function btnStartStrategy_Callback(hObject, eventdata, handles)
+% hObject    handle to btnStartStrategy (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in btnPauseStrategy.
+function btnPauseStrategy_Callback(hObject, eventdata, handles)
+% hObject    handle to btnPauseStrategy (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in btnStopStrategy.
+function btnStopStrategy_Callback(hObject, eventdata, handles)
+% hObject    handle to btnStopStrategy (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in btnClearStrategy.
+function btnClearStrategy_Callback(hObject, eventdata, handles)
+% hObject    handle to btnClearStrategy (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)

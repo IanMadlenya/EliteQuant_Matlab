@@ -1,0 +1,893 @@
+2017-12-08 17:44:26.291 INFO:[Brokers\IB\ibbrokerage.cpp,121][EliteQuant::IBBrokerage::connectToBrokerage]Connecting to 127.0.0.1:7497 clientId:0.
+2017-12-08 17:44:26.291 INFO:[Services\Api\apiservice.cpp,44][EliteQuant::ApiServer::run]api server started.
+2017-12-08 17:44:26.319 INFO:[Brokers\IB\ibbrokerage.cpp,126][EliteQuant::IBBrokerage::connectToBrokerage]Connected to ib brokerage 127.0.0.1:7497 clientId:0
+2017-12-08 17:44:28.320 INFO:[Brokers\IB\ibbrokerage.cpp,200][EliteQuant::IBBrokerage::requestNextValidOrderID]Requesting next order id, reqId = 1
+2017-12-08 17:44:28.320 INFO:[Brokers\IB\ibbrokerage.cpp,680][EliteQuant::IBBrokerage::managedAccounts]client_id=0,the managed account is:DU15132.
+2017-12-08 17:44:28.320 INFO:[Brokers\IB\ibbrokerage.cpp,599][EliteQuant::IBBrokerage::nextValidId]client id=0 next_valid_order_id = 1
+2017-12-08 17:44:28.321 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2104,msg:Market data farm connection is OK:ibdemo.
+2017-12-08 17:44:28.321 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2106,msg:HMDS data farm connection is OK:demohmds.
+2017-12-08 17:44:33.231 INFO:[Brokers\IB\ibbrokerage.cpp,451][EliteQuant::IBBrokerage::requestMarketDataAccountInformation]Requesting market data account info.
+2017-12-08 17:44:33.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccountCode,DU15132,,DU15132.
+2017-12-08 17:44:33.242 INFO:[Brokers\IB\ibbrokerage.cpp,369][EliteQuant::IBBrokerage::requestContractDetails]Requesting contract details.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccountOrGroup,DU15132,BASE,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccountOrGroup,DU15132,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccountReady,true,,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccountType,UNIVERSAL,,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccruedCash,0,BASE,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccruedCash,0,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccruedCash-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccruedCash-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccruedDividend,0.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccruedDividend-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AccruedDividend-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,500000.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Billable,0.00,USD,DU15132.
+2017-12-08 17:44:33.247 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Billable-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Billable-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,2000000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,500000,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,500000,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CorporateBondValue,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CorporateBondValue,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Currency,BASE,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Currency,USD,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,1,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: DayTradesRemaining,-1,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: DayTradesRemainingT+1,-1,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: DayTradesRemainingT+2,-1,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: DayTradesRemainingT+3,-1,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: DayTradesRemainingT+4,-1,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExchangeRate,1.00,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExchangeRate,1.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FundValue,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FundValue,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FutureOptionValue,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FutureOptionValue,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FuturesPNL,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FuturesPNL,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FxCashBalance,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FxCashBalance,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Guarantee,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Guarantee-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Guarantee-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: IndianStockHaircut,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: IndianStockHaircut-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: IndianStockHaircut-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: IssuerOptionValue,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: IssuerOptionValue,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Leverage-S,0.00,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadNextChange,0,,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MoneyMarketFundValue,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MoneyMarketFundValue,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MutualFundValue,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MutualFundValue,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetDividend,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetDividend,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500000,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500000,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationUncertainty,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: OptionMarketValue,0,BASE,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: OptionMarketValue,0,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PASharesValue,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PASharesValue-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PASharesValue-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PostExpirationExcess,0.00,USD,DU15132.
+2017-12-08 17:44:33.290 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PostExpirationExcess-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PostExpirationExcess-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PostExpirationMargin,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PostExpirationMargin-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: PostExpirationMargin-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RealCurrency,BASE,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RealCurrency,USD,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RealizedPnL,0,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RealizedPnL,0,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,500000.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,500000.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SegmentTitle-C,Commodities,,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SegmentTitle-S,Securities,,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,0,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,0,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TBillValue,0,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TBillValue,0,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TBondValue,0,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TBondValue,0,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,500000,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,500000,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue,500000.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue-S,500000.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalDebitCardPendingCharges,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalDebitCardPendingCharges-C,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalDebitCardPendingCharges-S,0.00,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TradingType-S,STKNOPT,,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,0,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,0,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: WarrantValue,0,BASE,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: WarrantValue,0,USD,DU15132.
+2017-12-08 17:44:33.291 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: WhatIfPMEnabled,true,,DU15132.
+2017-12-08 17:44:33.309 INFO:[Brokers\IB\ibbrokerage.cpp,610][EliteQuant::IBBrokerage::contractDetails]reqid=0, symbol=SPDR S&P 500 ETF TRUST
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,307][EliteQuant::IBBrokerage::subscribeMarketData]Subscribing to market data.
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to SPY(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to AAPL(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to AMZN(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to TSLA(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to GOOGL(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to FB(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to BIDU(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to BABA(0)
+2017-12-08 17:44:33.317 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to GS(0)
+2017-12-08 17:44:33.318 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to JPM(0)
+2017-12-08 17:44:33.318 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to ESZ7(0)
+2017-12-08 17:44:33.318 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to EUR.USD(0)
+2017-12-08 17:44:33.318 INFO:[Brokers\IB\ibbrokerage.cpp,319][EliteQuant::IBBrokerage::subscribeMarketData]subscribe to GBP.USD(0)
+2017-12-08 17:44:33.320 INFO:[Brokers\IB\ibbrokerage.cpp,615][EliteQuant::IBBrokerage::contractDetailsEnd]Contract details end. reqid=0
+2017-12-08 17:45:23.497 INFO:[Services\Api\apiservice.cpp,65][EliteQuant::ApiServer::onClientMessage]client msgin: o|MKT|SPY STK SMART|100
+2017-12-08 17:45:23.505 INFO:[Common\Brokerage\brokerage.cpp,69][EliteQuant::brokerage::monitorClientRequest]msg received: o|MKT|SPY STK SMART|100
+2017-12-08 17:45:23.505 INFO[Common\Brokerage\brokerage.cpp,97][EliteQuant::brokerage::monitorClientRequest]receive market order: o|MKT|SPY STK SMART|100
+2017-12-08 17:45:23.505 INFO:[Common\Order\ordermanager.cpp,58][EliteQuant::OrderManager::trackOrder]Order is put under track. OrderId=1
+2017-12-08 17:45:23.505 INFO:[Brokers\IB\ibbrokerage.cpp,164][EliteQuant::IBBrokerage::placeOrder]Place order, id = 1
+2017-12-08 17:45:25.062 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=1,eCode=2109,msg:Order Event Warning:Attribute 'Outside Regular Trading Hours' is ignored based on the order type and destination. PlaceOrder is now being processed..
+2017-12-08 17:45:25.122 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 1, status=Submitted.
+2017-12-08 17:45:25.123 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 1.
+2017-12-08 17:45:25.178 INFO:[Brokers\IB\ibbrokerage.cpp,620][EliteQuant::IBBrokerage::execDetails]Execution (Fill) details. reqid=-1.
+2017-12-08 17:45:25.178 ERROR:[Common\Order\ordermanager.cpp,83][EliteQuant::OrderManager::gotFill]Order is filled. OrderId=1, price=262.17
+2017-12-08 17:45:25.178 INFO:[Common\Security\position.cpp,8][EliteQuant::Position::Adjust]Position is adjusted. OrderId=1, price=262.17
+2017-12-08 17:45:25.190 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 1, status=Filled.
+2017-12-08 17:45:25.191 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 1.
+2017-12-08 17:45:25.191 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 1, status=Filled.
+2017-12-08 17:45:25.191 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 1.
+2017-12-08 17:45:26.128 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.986892,,DU15132.
+2017-12-08 17:45:26.139 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Leverage-S,0.05,,DU15132.
+2017-12-08 17:45:26.190 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,499997.50,USD,DU15132.
+2017-12-08 17:45:26.190 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,499997.50,USD,DU15132.
+2017-12-08 17:45:26.190 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue-S,473782.00,USD,DU15132.
+2017-12-08 17:45:26.190 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,26215.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,499997.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,499997.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue,473782.00,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1973774.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,486890.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,486890.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,499997.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,499997.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,13107.75,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,13107.75,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,26215.50,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,6553.87,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,6553.87,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,493443.62,USD,DU15132.
+2017-12-08 17:45:26.200 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,6553.87,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,493443.62,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,100,262
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,473782,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,473782,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,26216,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499997,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-2,USD,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,473782,BASE,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,473782,BASE,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,26216,BASE,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499997,BASE,DU15132.
+2017-12-08 17:45:26.236 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-2,BASE,DU15132.
+2017-12-08 17:45:37.276 INFO:[Services\Api\apiservice.cpp,65][EliteQuant::ApiServer::onClientMessage]client msgin: o|MKT|SPY STK SMART|-100
+2017-12-08 17:45:37.307 INFO:[Common\Brokerage\brokerage.cpp,69][EliteQuant::brokerage::monitorClientRequest]msg received: o|MKT|SPY STK SMART|-100
+2017-12-08 17:45:37.307 INFO[Common\Brokerage\brokerage.cpp,97][EliteQuant::brokerage::monitorClientRequest]receive market order: o|MKT|SPY STK SMART|-100
+2017-12-08 17:45:37.307 INFO:[Common\Order\ordermanager.cpp,58][EliteQuant::OrderManager::trackOrder]Order is put under track. OrderId=2
+2017-12-08 17:45:37.309 INFO:[Brokers\IB\ibbrokerage.cpp,164][EliteQuant::IBBrokerage::placeOrder]Place order, id = 2
+2017-12-08 17:45:37.345 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=2,eCode=2109,msg:Order Event Warning:Attribute 'Outside Regular Trading Hours' is ignored based on the order type and destination. PlaceOrder is now being processed..
+2017-12-08 17:45:37.392 INFO:[Brokers\IB\ibbrokerage.cpp,620][EliteQuant::IBBrokerage::execDetails]Execution (Fill) details. reqid=-1.
+2017-12-08 17:45:37.392 ERROR:[Common\Order\ordermanager.cpp,83][EliteQuant::OrderManager::gotFill]Order is filled. OrderId=2, price=262.13
+2017-12-08 17:45:37.392 INFO:[Common\Security\position.cpp,8][EliteQuant::Position::Adjust]Position is adjusted. OrderId=2, price=262.13
+2017-12-08 17:45:37.393 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 2, status=Filled.
+2017-12-08 17:45:37.393 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 2.
+2017-12-08 17:45:37.452 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 2, status=Filled.
+2017-12-08 17:45:37.452 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 2.
+2017-12-08 17:45:37.463 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 2, status=Filled.
+2017-12-08 17:45:37.463 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 2.
+2017-12-08 17:45:38.422 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,1,,DU15132.
+2017-12-08 17:45:38.433 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Leverage-S,0.00,,DU15132.
+2017-12-08 17:45:38.484 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1999976.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,0.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,499994.00,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,0,  0
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,499994,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,499994,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,0,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499994,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,0,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RealizedPnL,-6,USD,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,499994,BASE,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,499994,BASE,DU15132.
+2017-12-08 17:45:38.494 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,0,BASE,DU15132.
+2017-12-08 17:45:38.495 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499994,BASE,DU15132.
+2017-12-08 17:45:38.495 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,0,BASE,DU15132.
+2017-12-08 17:45:38.495 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RealizedPnL,-6,BASE,DU15132.
+2017-12-08 17:45:56.412 INFO:[Services\Api\apiservice.cpp,65][EliteQuant::ApiServer::onClientMessage]client msgin: o|MKT|SPY STK SMART|100|258|OPEN
+2017-12-08 17:45:56.585 INFO:[Common\Brokerage\brokerage.cpp,69][EliteQuant::brokerage::monitorClientRequest]msg received: o|MKT|SPY STK SMART|100|258|OPEN
+2017-12-08 17:45:56.585 INFO[Common\Brokerage\brokerage.cpp,97][EliteQuant::brokerage::monitorClientRequest]receive market order: o|MKT|SPY STK SMART|100|258|OPEN
+2017-12-08 17:45:56.586 INFO:[Common\Order\ordermanager.cpp,58][EliteQuant::OrderManager::trackOrder]Order is put under track. OrderId=3
+2017-12-08 17:45:56.587 INFO:[Brokers\IB\ibbrokerage.cpp,164][EliteQuant::IBBrokerage::placeOrder]Place order, id = 3
+2017-12-08 17:45:56.619 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=3,eCode=2109,msg:Order Event Warning:Attribute 'Outside Regular Trading Hours' is ignored based on the order type and destination. PlaceOrder is now being processed..
+2017-12-08 17:45:56.658 INFO:[Brokers\IB\ibbrokerage.cpp,620][EliteQuant::IBBrokerage::execDetails]Execution (Fill) details. reqid=-1.
+2017-12-08 17:45:56.658 ERROR:[Common\Order\ordermanager.cpp,83][EliteQuant::OrderManager::gotFill]Order is filled. OrderId=3, price=262.18
+2017-12-08 17:45:56.658 INFO:[Common\Security\position.cpp,8][EliteQuant::Position::Adjust]Position is adjusted. OrderId=3, price=262.18
+2017-12-08 17:45:56.659 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 3, status=Filled.
+2017-12-08 17:45:56.659 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 3.
+2017-12-08 17:45:56.708 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 3, status=Filled.
+2017-12-08 17:45:56.709 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 3.
+2017-12-08 17:45:56.721 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 3, status=Filled.
+2017-12-08 17:45:56.721 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 3.
+2017-12-08 17:45:57.659 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.986892,,DU15132.
+2017-12-08 17:45:57.670 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Leverage-S,0.05,,DU15132.
+2017-12-08 17:45:57.719 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,499991.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,499991.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue-S,473775.00,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,26216.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,499991.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,499991.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue,473775.00,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1973749.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,486884.00,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,486884.00,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,499991.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,499991.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,13108.25,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,13108.25,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,26216.50,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,6554.13,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,493437.38,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,100,262
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,473775,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,473775,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,26217,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499992,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-2,USD,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,473775,BASE,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,473775,BASE,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,26217,BASE,DU15132.
+2017-12-08 17:45:57.729 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499992,BASE,DU15132.
+2017-12-08 17:45:57.730 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-2,BASE,DU15132.
+2017-12-08 17:46:19.742 INFO:[Services\Api\apiservice.cpp,65][EliteQuant::ApiServer::onClientMessage]client msgin: c|3
+2017-12-08 17:46:19.787 INFO:[Common\Brokerage\brokerage.cpp,69][EliteQuant::brokerage::monitorClientRequest]msg received: c|3
+2017-12-08 17:46:19.787 INFO:[Brokers\IB\ibbrokerage.cpp,210][EliteQuant::IBBrokerage::cancelOrder]Cancel Order 4
+2017-12-08 17:46:19.788 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=3,eCode=10148,msg:OrderId 3 that needs to be cancelled can not be cancelled, state: Filled..
+2017-12-08 17:46:23.817 INFO:[Services\Api\apiservice.cpp,65][EliteQuant::ApiServer::onClientMessage]client msgin: c|3
+2017-12-08 17:46:23.855 INFO:[Common\Brokerage\brokerage.cpp,69][EliteQuant::brokerage::monitorClientRequest]msg received: c|3
+2017-12-08 17:46:23.855 INFO:[Brokers\IB\ibbrokerage.cpp,210][EliteQuant::IBBrokerage::cancelOrder]Cancel Order 4
+2017-12-08 17:46:23.867 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=3,eCode=10148,msg:OrderId 3 that needs to be cancelled can not be cancelled, state: Filled..
+2017-12-08 17:46:56.385 INFO:[Services\Api\apiservice.cpp,65][EliteQuant::ApiServer::onClientMessage]client msgin: o|MKT|SPY STK SMART|100|250|OPEN
+2017-12-08 17:46:56.506 INFO:[Common\Brokerage\brokerage.cpp,69][EliteQuant::brokerage::monitorClientRequest]msg received: o|MKT|SPY STK SMART|100|250|OPEN
+2017-12-08 17:46:56.506 INFO[Common\Brokerage\brokerage.cpp,97][EliteQuant::brokerage::monitorClientRequest]receive market order: o|MKT|SPY STK SMART|100|250|OPEN
+2017-12-08 17:46:56.507 INFO:[Common\Order\ordermanager.cpp,58][EliteQuant::OrderManager::trackOrder]Order is put under track. OrderId=4
+2017-12-08 17:46:56.507 INFO:[Brokers\IB\ibbrokerage.cpp,164][EliteQuant::IBBrokerage::placeOrder]Place order, id = 4
+2017-12-08 17:46:56.537 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=4,eCode=2109,msg:Order Event Warning:Attribute 'Outside Regular Trading Hours' is ignored based on the order type and destination. PlaceOrder is now being processed..
+2017-12-08 17:46:56.570 INFO:[Brokers\IB\ibbrokerage.cpp,620][EliteQuant::IBBrokerage::execDetails]Execution (Fill) details. reqid=-1.
+2017-12-08 17:46:56.570 ERROR:[Common\Order\ordermanager.cpp,83][EliteQuant::OrderManager::gotFill]Order is filled. OrderId=4, price=262.21
+2017-12-08 17:46:56.571 INFO:[Common\Security\position.cpp,8][EliteQuant::Position::Adjust]Position is adjusted. OrderId=4, price=262.21
+2017-12-08 17:46:56.572 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 4, status=Filled.
+2017-12-08 17:46:56.572 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 4.
+2017-12-08 17:46:56.630 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 4, status=Filled.
+2017-12-08 17:46:56.631 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 4.
+2017-12-08 17:46:56.642 INFO:[Brokers\IB\ibbrokerage.cpp,543][EliteQuant::IBBrokerage::openOrder]Open orders, oid = 4, status=Filled.
+2017-12-08 17:46:56.642 INFO:[Brokers\IB\ibbrokerage.cpp,529][EliteQuant::IBBrokerage::orderStatus]Order status, oid = 4.
+2017-12-08 17:46:57.581 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.97378,,DU15132.
+2017-12-08 17:46:57.581 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Leverage-S,0.10,,DU15132.
+2017-12-08 17:46:57.639 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,499992.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,499992.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue-S,447553.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52439.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,499992.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,499992.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashValue,447553.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947529.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473772.50,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473772.50,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,499992.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,499992.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26219.50,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26219.50,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52439.00,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13109.75,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486882.25,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,447553,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,447553,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52439,USD,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: CashBalance,447553,BASE,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: TotalCashBalance,447553,BASE,DU15132.
+2017-12-08 17:46:57.650 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52439,BASE,DU15132.
+2017-12-08 17:49:57.681 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.973783,,DU15132.
+2017-12-08 17:49:57.743 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,499986.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,499986.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52433.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,499986.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,499986.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947511.01,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,499986.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,499986.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26216.50,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26216.50,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52433.00,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13108.25,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486877.75,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52433,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499986,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-8,USD,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52433,BASE,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499986,BASE,DU15132.
+2017-12-08 17:49:57.754 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-8,BASE,DU15132.
+2017-12-08 17:52:57.682 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.97378,,DU15132.
+2017-12-08 17:52:57.742 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,499993.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,499993.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52440.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,499993.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,499993.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947531.99,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473773.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473773.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,499993.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,499993.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26220.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26220.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52440.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13110.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486883.00,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52440,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499993,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-1,USD,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52440,BASE,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499993,BASE,DU15132.
+2017-12-08 17:52:57.753 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,-1,BASE,DU15132.
+2017-12-08 17:55:57.716 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.973771,,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,500012.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,500012.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52459.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,500012.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,500012.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947589.01,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473782.50,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473782.50,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,500012.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,500012.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26229.50,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26229.50,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52459.00,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13114.75,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486897.25,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52459,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500012,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,18,USD,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52459,BASE,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500012,BASE,DU15132.
+2017-12-08 17:55:57.727 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,18,BASE,DU15132.
+2017-12-08 18:01:57.692 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,500013.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,500013.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52460.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,500013.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,500013.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947592.01,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473783.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473783.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,500013.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,500013.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26230.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26230.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52460.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13115.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486898.00,USD,DU15132.
+2017-12-08 18:01:57.703 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486898.00,USD,DU15132.
+2017-12-08 18:01:57.768 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 18:01:57.779 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52460,USD,DU15132.
+2017-12-08 18:01:57.779 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500013,USD,DU15132.
+2017-12-08 18:01:57.779 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,19,USD,DU15132.
+2017-12-08 18:01:57.779 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52460,BASE,DU15132.
+2017-12-08 18:01:57.779 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500013,BASE,DU15132.
+2017-12-08 18:01:57.779 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,19,BASE,DU15132.
+2017-12-08 18:04:57.696 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.973773,,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,500007.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,500007.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52454.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,500007.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,500007.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947574.01,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473780.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473780.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,500007.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,500007.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26227.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26227.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52454.00,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486893.50,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52454,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500007,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,13,USD,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52454,BASE,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500007,BASE,DU15132.
+2017-12-08 18:04:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,13,BASE,DU15132.
+2017-12-08 18:07:57.698 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.973777,,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,499998.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,499998.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52445.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,499998.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,499998.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947547.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473775.50,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473775.50,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,499998.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,499998.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26222.50,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26222.50,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52445.00,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13111.25,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486886.75,USD,DU15132.
+2017-12-08 18:07:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486886.75,USD,DU15132.
+2017-12-08 18:07:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52445,USD,DU15132.
+2017-12-08 18:07:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499998,USD,DU15132.
+2017-12-08 18:07:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,4,USD,DU15132.
+2017-12-08 18:07:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52445,BASE,DU15132.
+2017-12-08 18:07:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,499998,BASE,DU15132.
+2017-12-08 18:07:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,4,BASE,DU15132.
+2017-12-08 18:07:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 18:10:57.701 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.973773,,DU15132.
+2017-12-08 18:10:57.762 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,500007.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,500007.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52454.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,500007.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,500007.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947574.01,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473780.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473780.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,500007.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,500007.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26227.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26227.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52454.00,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13113.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486893.50,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52454,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500007,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,13,USD,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52454,BASE,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500007,BASE,DU15132.
+2017-12-08 18:10:57.773 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,13,BASE,DU15132.
+2017-12-08 18:13:57.704 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.973768,,DU15132.
+2017-12-08 18:13:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,500018.00,USD,DU15132.
+2017-12-08 18:13:57.764 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,500018.00,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52465.00,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,500018.00,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,500018.00,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947607.01,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473785.50,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473785.50,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,500018.00,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,500018.00,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26232.50,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26232.50,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52465.00,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13116.25,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486901.75,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52465,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500018,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,24,USD,DU15132.
+2017-12-08 18:13:57.775 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52465,BASE,DU15132.
+2017-12-08 18:13:57.810 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500018,BASE,DU15132.
+2017-12-08 18:13:57.810 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,24,BASE,DU15132.
+2017-12-08 18:16:57.706 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: Cushion,0.973762,,DU15132.
+2017-12-08 18:16:57.765 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue-S,500033.00,USD,DU15132.
+2017-12-08 18:16:57.765 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation-S,500033.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue-S,52480.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: EquityWithLoanValue,500033.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidation,500033.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: BuyingPower,1947652.01,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA-S,473793.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: SMA,473793.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity-S,500033.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTEquity,500033.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin-S,26240.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: RegTMargin,26240.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: GrossPositionValue,52480.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq-S,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq-S,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds-S,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity-S,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: InitMarginReq,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: MaintMarginReq,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: AvailableFunds,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: ExcessLiquidity,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq-S,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq-S,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds-S,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity-S,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadInitMarginReq,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadMaintMarginReq,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadAvailableFunds,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: LookAheadExcessLiquidity,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq-S,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq-S,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds-S,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity-S,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullInitMarginReq,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullMaintMarginReq,13120.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullAvailableFunds,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: FullExcessLiquidity,486913.00,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,580][EliteQuant::IBBrokerage::updatePortfolio]Update portfolio: SPY,200,262
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52480,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500033,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,39,USD,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: StockMarketValue,52480,BASE,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: NetLiquidationByCurrency,500033,BASE,DU15132.
+2017-12-08 18:16:57.776 INFO:[Brokers\IB\ibbrokerage.cpp,571][EliteQuant::IBBrokerage::updateAccountValue]Update account value: UnrealizedPnL,39,BASE,DU15132.
+2017-12-08 21:39:55.218 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=1100,msg:Connectivity between IB and TWS has been lost..
+2017-12-08 21:39:55.268 INFO:[Brokers\IB\ibbrokerage.cpp,154][EliteQuant::IBBrokerage::disconnectFromBrokerage]TWS connection disconnected!
+2017-12-08 21:39:55.279 INFO:[Brokers\IB\ibbrokerage.cpp,121][EliteQuant::IBBrokerage::connectToBrokerage]Connecting to 127.0.0.1:7497 clientId:0.
+2017-12-08 21:39:57.772 INFO:[Brokers\IB\ibbrokerage.cpp,126][EliteQuant::IBBrokerage::connectToBrokerage]Connected to ib brokerage 127.0.0.1:7497 clientId:0
+2017-12-08 21:39:59.784 INFO:[Brokers\IB\ibbrokerage.cpp,200][EliteQuant::IBBrokerage::requestNextValidOrderID]Requesting next order id, reqId = 2
+2017-12-08 21:39:59.784 INFO:[Brokers\IB\ibbrokerage.cpp,680][EliteQuant::IBBrokerage::managedAccounts]client_id=0,the managed account is:DU15132.
+2017-12-08 21:39:59.784 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2110,msg:Connectivity between TWS and server is broken. It will be restored automatically..
+2017-12-08 21:39:59.784 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2104,msg:Market data farm connection is OK:ibdemo.
+2017-12-08 21:39:59.784 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2106,msg:HMDS data farm connection is OK:demohmds.
+2017-12-08 21:40:17.697 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=1100,msg:Connectivity between IB and TWS has been lost..
+2017-12-08 21:40:17.697 INFO:[Brokers\IB\ibbrokerage.cpp,154][EliteQuant::IBBrokerage::disconnectFromBrokerage]TWS connection disconnected!
+2017-12-08 21:40:17.707 INFO:[Brokers\IB\ibbrokerage.cpp,121][EliteQuant::IBBrokerage::connectToBrokerage]Connecting to 127.0.0.1:7497 clientId:0.
+2017-12-08 21:40:17.751 INFO:[Brokers\IB\ibbrokerage.cpp,126][EliteQuant::IBBrokerage::connectToBrokerage]Connected to ib brokerage 127.0.0.1:7497 clientId:0
+2017-12-08 21:40:19.752 INFO:[Brokers\IB\ibbrokerage.cpp,200][EliteQuant::IBBrokerage::requestNextValidOrderID]Requesting next order id, reqId = 2
+2017-12-08 21:40:19.752 INFO:[Brokers\IB\ibbrokerage.cpp,680][EliteQuant::IBBrokerage::managedAccounts]client_id=0,the managed account is:DU15132.
+2017-12-08 21:40:19.752 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2110,msg:Connectivity between TWS and server is broken. It will be restored automatically..
+2017-12-08 21:40:19.752 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2104,msg:Market data farm connection is OK:ibdemo.
+2017-12-08 21:40:19.752 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2106,msg:HMDS data farm connection is OK:demohmds.
+2017-12-08 21:40:19.752 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2103,msg:Market data farm connection is broken:ibdemo.
+2017-12-08 21:40:19.752 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2105,msg:HMDS data farm connection is broken:demohmds.
+2017-12-08 21:43:19.633 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=1100,msg:Connectivity between IB and TWS has been lost..
+2017-12-08 21:43:19.634 INFO:[Brokers\IB\ibbrokerage.cpp,154][EliteQuant::IBBrokerage::disconnectFromBrokerage]TWS connection disconnected!
+2017-12-08 21:43:19.645 INFO:[Brokers\IB\ibbrokerage.cpp,121][EliteQuant::IBBrokerage::connectToBrokerage]Connecting to 127.0.0.1:7497 clientId:0.
+2017-12-08 21:43:19.684 INFO:[Brokers\IB\ibbrokerage.cpp,126][EliteQuant::IBBrokerage::connectToBrokerage]Connected to ib brokerage 127.0.0.1:7497 clientId:0
+2017-12-08 21:43:21.684 INFO:[Brokers\IB\ibbrokerage.cpp,200][EliteQuant::IBBrokerage::requestNextValidOrderID]Requesting next order id, reqId = 2
+2017-12-08 21:43:21.684 INFO:[Brokers\IB\ibbrokerage.cpp,680][EliteQuant::IBBrokerage::managedAccounts]client_id=0,the managed account is:DU15132.
+2017-12-08 21:43:21.684 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2110,msg:Connectivity between TWS and server is broken. It will be restored automatically..
+2017-12-08 21:43:21.684 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2103,msg:Market data farm connection is broken:ibdemo.
+2017-12-08 21:43:21.684 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2105,msg:HMDS data farm connection is broken:demohmds.
+2017-12-08 21:46:22.885 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=1100,msg:Connectivity between IB and TWS has been lost..
+2017-12-08 21:46:22.886 INFO:[Brokers\IB\ibbrokerage.cpp,154][EliteQuant::IBBrokerage::disconnectFromBrokerage]TWS connection disconnected!
+2017-12-08 21:46:22.897 INFO:[Brokers\IB\ibbrokerage.cpp,121][EliteQuant::IBBrokerage::connectToBrokerage]Connecting to 127.0.0.1:7497 clientId:0.
+2017-12-08 21:46:22.936 INFO:[Brokers\IB\ibbrokerage.cpp,126][EliteQuant::IBBrokerage::connectToBrokerage]Connected to ib brokerage 127.0.0.1:7497 clientId:0
+2017-12-08 21:46:24.937 INFO:[Brokers\IB\ibbrokerage.cpp,200][EliteQuant::IBBrokerage::requestNextValidOrderID]Requesting next order id, reqId = 2
+2017-12-08 21:46:24.937 INFO:[Brokers\IB\ibbrokerage.cpp,680][EliteQuant::IBBrokerage::managedAccounts]client_id=0,the managed account is:DU15132.
+2017-12-08 21:46:24.937 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2110,msg:Connectivity between TWS and server is broken. It will be restored automatically..
+2017-12-08 21:46:24.937 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2103,msg:Market data farm connection is broken:ibdemo.
+2017-12-08 21:46:24.937 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2105,msg:HMDS data farm connection is broken:demohmds.
+2017-12-08 21:49:24.097 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=1100,msg:Connectivity between IB and TWS has been lost..
+2017-12-08 21:49:24.098 INFO:[Brokers\IB\ibbrokerage.cpp,154][EliteQuant::IBBrokerage::disconnectFromBrokerage]TWS connection disconnected!
+2017-12-08 21:49:24.109 INFO:[Brokers\IB\ibbrokerage.cpp,121][EliteQuant::IBBrokerage::connectToBrokerage]Connecting to 127.0.0.1:7497 clientId:0.
+2017-12-08 21:49:24.149 INFO:[Brokers\IB\ibbrokerage.cpp,126][EliteQuant::IBBrokerage::connectToBrokerage]Connected to ib brokerage 127.0.0.1:7497 clientId:0
+2017-12-08 21:49:26.150 INFO:[Brokers\IB\ibbrokerage.cpp,200][EliteQuant::IBBrokerage::requestNextValidOrderID]Requesting next order id, reqId = 2
+2017-12-08 21:49:26.150 INFO:[Brokers\IB\ibbrokerage.cpp,680][EliteQuant::IBBrokerage::managedAccounts]client_id=0,the managed account is:DU15132.
+2017-12-08 21:49:26.150 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2110,msg:Connectivity between TWS and server is broken. It will be restored automatically..
+2017-12-08 21:49:26.150 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2103,msg:Market data farm connection is broken:ibdemo.
+2017-12-08 21:49:26.150 ERROR:[Brokers\IB\ibbrokerage.cpp,637][EliteQuant::IBBrokerage::error]id=-1,eCode=2105,msg:HMDS data farm connection is broken:demohmds.

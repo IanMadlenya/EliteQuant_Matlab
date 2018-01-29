@@ -1,0 +1,97 @@
+# http://www.atool.org/chinese2unicode.php
+Region: cn      # TODO: cn uptick is red, downtick is green; us is opposite
+Prog_Name: <HTML>&#x7fa4;&#x82f1;&#x91cf;&#x5316;
+File: <HTML>&#x6587;&#x4ef6;
+Folder: <HTML>&#x6587;&#x4ef6;&#x5939;
+Open_Folder: <HTML>&#x6253;&#x5f00;&#x6587;&#x4ef6;&#x5939;
+Exit: <HTML>&#x9000;&#x51fa;
+Exit_App: <HTML>&#x9000;&#x51fa;&#x7fa4;&#x82f1;&#x91cf;&#x5316;
+#------------------ Top Left ---------------#
+Market: <HTML>&#x884c;&#x60c5;
+Symbol: <HTML>&#x5408;&#x7ea6;&#x4ee3;&#x7801;
+Name: <HTML>&#x5408;&#x7ea6;&#x540d;&#x79f0;
+Last_Price: <HTML>&#x6700;&#x65b0;&#x4ef7;
+Volume: <HTML>&#x6210;&#x4ea4;&#x91cf;
+Open_Interest: <HTML>&#x6301;&#x4ed3;&#x91cf;
+Bid_Size: <HTML>&#x4e70;&#x4e00;&#x91cf;
+Bid: <HTML>&#x4e70;&#x4e00;&#x4ef7;
+Ask: <HTML>&#x5356;&#x4e00;&#x4ef7;
+Ask_Size: <HTML>&#x5356;&#x4e00;&#x91cf;
+Yesterday_Close: <HTML>&#x6628;&#x6536;&#x4ef7;
+Open_Price: <HTML>&#x5f00;&#x76d8;&#x4ef7;
+High_Price: <HTML>&#x6700;&#x9ad8;&#x4ef7;
+Low_Price: <HTML>&#x6700;&#x4f4e;&#x4ef7;
+Time: <HTML>&#x65f6;&#x95f4;
+Source: <HTML>&#x6765;&#x6e90;
+#------------------ End of Top Left ---------------#
+#------------------ Top Right ---------------#
+Discretionary: <HTML>&#x624b;&#x52a8;&#x4ea4;&#x6613;
+Security_Type: <HTML>&#x5408;&#x7ea6;&#x7c7b;&#x578b;
+Stock: <HTML>&#x80a1;&#x7968;
+Future: <HTML>&#x671f;&#x8d27;
+Option: <HTML>&#x671f;&#x6743;
+Forex: <HTML>&#x5916;&#x6c47;
+Direction: <HTML>&#x65b9;&#x5411;
+Long: <HTML>&#x591a;
+Short: <HTML>&#x7a7a;
+Order_Flag: <HTML>&#x5f00;&#x5e73;
+Open: <HTML>&#x5f00;&#x4ed3;
+Close: <HTML>&#x5e73;&#x4ed3;
+Close_Yesterday: <HTML>&#x5e73;&#x6628;
+Close_Today: <HTML>&#x5e73;&#x4eca;
+Price: <HTML>&#x4ef7;&#x683c;
+Quantity: <HTML>&#x6570;&#x91cf;
+Order_Type: <HTML>&#x6307;&#x4ee4;&#x7c7b;&#x578b;
+MKT: <HTML>&#x5e02;&#x4ef7;&#x6307;&#x4ee4;
+LMT: <HTML>&#x9650;&#x4ef7;&#x6307;&#x4ee4;
+FAK: FAK
+FOK: FOK
+Exchange: <HTML>&#x4ea4;&#x6613;&#x6240;
+Account: <HTML>&#x8d26;&#x6237;
+Place_Order: <HTML>&#x4e0b;&#x5355;
+#------------------ End of Top Right ---------------#
+#------------------ Bottom Left ---------------#
+# 1. Log Tab
+Log: 日志
+Content: 内容
+# 2. Order Tab
+Order: 委托
+OrderID: 委托编号
+Filled: 成交数量
+Status: 委托状态
+Order_Time: 委托时间
+Cancel_Time: 撤销时间
+# 3. Fill Tab
+Fill: 成交
+FillID: 成交编号
+Fill_Price: 成交价格
+Fill_Time: 成交时间
+# 4. position tab
+Position: 持仓
+Yesterday_Quantity: 昨持仓
+Freezed: 冻结量
+Average_Price: 持仓成本
+Open_PnL: 持仓盈亏
+# 5. account tab
+Account: 账户
+AccountID: 账户编号
+Yesterday_Net: 昨净值
+Net: 净值
+Available: 可用
+Commission: 手续费
+Margin: 保证金
+Closed_PnL: 平仓盈亏
+Brokerage: 经纪商
+API: 接口
+#------------------ End of Bottom Left ---------------#
+#------------------ Bottom Right ---------------#
+Automatic: 自动交易
+SID: 策略ID
+SName: 策略名称
+nHoldings: 持仓数量
+nTrades: 交易数
+SStatus: 状态
+Start_Strat: 开启策略
+Pause_Strat: 暂停策略
+Stop_Strat: 停止策略
+Liquidate_Strat: 清仓策略

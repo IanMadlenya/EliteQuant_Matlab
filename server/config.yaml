@@ -1,17 +1,17 @@
 #------------------ System Setting --------------#
 broker: IB # IB CTP SINA, GOOGLE, PAPER
-msgq: zmq           # nanomsg kafka, zmq
+msgq: nanomsg           # nanomsg kafka, zmq
 log_dir: d:/workspace/elitequant_matlab/log
 data_dir: d:/workspace/elitequant_matlab/data
 #------------------ End of System ---------------#
 #-------------- Interactive Brokers -------------#
-account: DU15228
+account: DU15132
 ibport: 7497
 # ----------------- End of IB  ------------------#
 #----------------- Ctp --------------------------#
 ctp_broker_id: 9999
-ctp_user_id: simnow
-ctp_password: simnow
+ctp_user_id: your_simnow_account
+ctp_password: your_simnow_pass
 ctp_md_address: tcp://180.168.146.187:10010
 ctp_td_address: tcp://180.168.146.187:10000
 # ---------------- End of CTP  ------------------#
